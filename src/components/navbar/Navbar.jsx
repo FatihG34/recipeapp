@@ -1,10 +1,11 @@
 import { ExternalLink } from "react-external-link"
-import { NavLink, Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+// import Link from '@commercetools-uikit/link';
 
 const Navbar = () => {
     let navigate = useNavigate()
     return (
-        <nav className="navbar navbar-expand-md navbar-success bg-info">
+        <nav className="navbar navbar-expand-md bg-info">
             <div className="container-fluid">
                 <Link to="/" className="navbar-brand">
                     <span><span ariaHidden="true">&lt;</span>F & G<span ariaHidden="true"> /&gt;</span></span> RECIPE
@@ -39,6 +40,9 @@ const Navbar = () => {
                             >
                                 GITHUB
                             </ExternalLink>
+                            {/* <Link isExternal={true} to={'https://github.com/FatihG34'}>
+                                GITHUB
+                            </Link> */}
                         </li>
                         <li className="nav-item">
                             <Link
