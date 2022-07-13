@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Navigate } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Home from '../pages/home/Home';
 import About from '../pages/about/About';
@@ -12,10 +11,12 @@ const AppRouter = () => {
             <BrowserRouter>
                 <Navbar />
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    {/* <Route path='/github' element={<Navigate to={"https://github.com/FatihG34"} />} /> */}
+                    <Route>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/about' element={<About />} />
+                        {/* <Route path='/github' element={<Navigate to={"https://github.com/FatihG34"} />} /> */}
 
+                    </Route>
                 </Routes>
 
 

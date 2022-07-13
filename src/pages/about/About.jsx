@@ -1,8 +1,11 @@
-import React from 'react'
-
+import React from 'react';
+import coding from '../../assets/coding.svg';
 const About = () => {
     return (
-        <div>About</div>
+        <div className='text-center'>
+            <img style={{ width: "350px" }} src={coding} alt="coding" />
+            <p></p>
+        </div>
     )
 }
 
