@@ -1,9 +1,9 @@
-import React from 'react'
+// // import React from 'react'
+// // import { Navigate } from 'react-router-dom'
 
-const Details = () => {
-    return (
-        <div>Details</div>
-    )
-}
+// const Details = () => {
+//     window.location.replace('https://github.com/FatihG34');
+//     return null
+// }
 
-export default Details
+// export default Details
