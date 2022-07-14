@@ -1,9 +1,14 @@
 import AppRouter from './router/AppRouter';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './pages/login/Login';
+import theme from '../src/components/globalStyles/theme';
+import { ThemeProvider } from 'styled-components';
 
 function App() {
-  return <AppRouter />;
+  return (
+    <ThemeProvider theme={theme}>
+      <AppRouter />;
+
+    </ThemeProvider>
+  )
 }
 
 export default App;

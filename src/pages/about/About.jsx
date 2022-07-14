@@ -1,12 +1,7 @@
-import React from 'react';
-import coding from '../../assets/coding.svg';
-const About = () => {
-    return (
-        <div className='text-center'>
-            <img style={{ width: "350px" }} src={coding} alt="coding" />
-            <p></p>
-        </div>
-    )
-}
+import AboutStyle from './About.style';
 
-export default About
+const About = () => {
+    return <div>About</div>;
+};
+
+export default About;
