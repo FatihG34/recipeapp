@@ -1,6 +1,6 @@
 import { ImgDiv, HomeImg, HeaderText } from './Home.style';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Header from '../../components/header/Header';
 import Cards from '../../components/cards/Cards';
 import homeSvg from '../../assets/home.svg'
@@ -10,8 +10,11 @@ const Home = () => {
     const [query, setQuery] = useState('egg');
     const [selectedMeal, setSelectedMeal] = useState(mealType[0]);
     const [recipes, setRecipes] = useState(null);
-    const APP_ID = `07b6a2fc`;
-    const APP_KEY = `3c2a16f5fd6b3e5b2d27464d18b30592`;
+
+    const APP_ID = process.env.REACT_APP_APP_ID;
+    const APP_KEY = process.env.REACT_APP_APP_KEY;
+
+
     const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${selectedMeal}`;
     const getData = async () => {
         if (query) {
@@ -25,7 +28,7 @@ const Home = () => {
             alert('Please Enter your meal')
         }
     };
-    console.log(recipes);
+    // console.log(recipes);
     return (
         <div>
             <Header
