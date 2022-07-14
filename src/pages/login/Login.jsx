@@ -1,4 +1,4 @@
-
+import LoginStyle from './Login.style'
 
 const Login = () => {
 
