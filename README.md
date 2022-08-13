@@ -2,40 +2,24 @@
 
 ## Description
 
-Project aims to create a Recipe App.
+### I have used to
 
-## Objective
+- React-Router
 
-Build a Recipe App using ReactJS.
+- Local state
 
-### Following topics are to be covered
+- Global state : Global Style,
 
-- HTML
+- Styled Components,
 
-- CSS
+- Axios for fetch data from edamam Api
 
-- JS
 
-- ReactJS
+## Outcome
 
-### Be able to
+If you want to see details on this app, [You can visit Here](https://recipeapp-lime.vercel.app/login).
 
-- improve coding skills within HTML & CSS & JS & ReactJS.
+![Project Snapshot](./recipeapp.gif)
 
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
+**<p align="center">&#9786; Thanks for visiting &#9997;</p>**
 
-## Steps to Solution
-
-- Step 1: Create React App using `npx create-react-app recipe-app`
-
-- Step 2: Signup `https://developer.edamam.com/edamam-docs-recipe-api` and get api key.
-
-- Step 3 : Using api key and `axios` for getting data from `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`.
-
-- Step 4: You can use css frameworks like Bootstrap, Semantic UI.
-
-- Step 5 : You can get random login background image from `https://picsum.photos/1600/900`
-
-- Step 6: Add project gif to your project and README.md file.
-
-**<p align="center">&#9786; Be Happy &#9997;</p>**
