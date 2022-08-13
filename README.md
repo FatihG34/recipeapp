@@ -4,7 +4,6 @@
 
 Project aims to create a Recipe App.
 
-
 ## Objective
 
 Build a Recipe App using ReactJS.
